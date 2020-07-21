@@ -18,7 +18,7 @@ COPY src /app
 # RUN npm run build
 
 # --- Release with Alpine ----
-FROM node:8.9-alpine AS release  
+FROM node:14-alpine AS release  
 # Create app directory
 WORKDIR /app
 # optional
